@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA Parfumes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header__container">
+        <a href="#" class="logo">AURA<span class="logo__red">parfumes</span></a>
+        
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a href="#products">Аромати</a></li>
+                <li><a href="#reviews">Відгуки</a></li>
+                <li><a href="#news">Новини</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__actions">
+            <button class="theme-btn" id="themeBtn">🌙</button>
+            <button class="burger" id="burgerBtn">☰</button>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__overlay"></div>
+    <div class="mobile-menu__content">
+        <button class="mobile-menu__close" id="closeMenuBtn">×</button>
+        <ul>
+            <li><a href="#products">Аромати</a></li>
+            <li><a href="#reviews">Відгуки</a></li>
+            <li><a href="#news">Новини</a></li>
+        </ul>
+    </div>
+</div>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <h1>ВІДКРИЙ СВІЙ<br>УНІКАЛЬНИЙ АРОМАТ</h1>
+            <button class="btn" id="openModalBtn">ЗАМОВИТИ</button>
+        </div>
+    </section>
+
+    <section id="products" class="section">
+        <div class="container">
+            <h2>НАШІ АРОМАТИ</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/75/31/4a/75314a098a31c3c0c8a3a38678d393f0.jpg" alt="Woody Oud">
+                    <h3>Woody Oud</h3>
+                    <p>Деревні, шкіряні</p>
+                    <span class="price">2 450 ₴</span>
+                    <button class="btn-small order-btn" data-product="Woody Oud">Замовити</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/e3/3e/71/e33e71e3716295c397f7de4cf272a819.jpg" alt="Floral Bloom">
+                    <h3>Floral Bloom</h3>
+                    <p>Квіткові, мускус</p>
+                    <span class="price">2 890 ₴</span>
+                    <button class="btn-small order-btn" data-product="Floral Bloom">Замовити</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/5a/e1/6c/5ae16c84dc73b72830a3c337e02aea2d.jpg" alt="Amber Night">
+                    <h3>Amber Night</h3>
+                    <p>Амбра, ваніль</p>
+                    <span class="price">3 200 ₴</span>
+                    <button class="btn-small order-btn" data-product="Amber Night">Замовити</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/a6/96/c3/a696c39e184ce8ae01e13c2cef59ba32.jpg" alt="Rose Noir">
+                    <h3>Rose Noir</h3>
+                    <p>Троянда, смородина</p>
+                    <span class="price">2 990 ₴</span>
+                    <button class="btn-small order-btn" data-product="Rose Noir">Замовити</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2>ВІДГУКИ</h2>
+            <div class="reviews">
+                <div class="review"><div class="avatar">KK</div><h3>Катерина</h3><p>Неймовірні аромати! Дуже задоволена покупкою.</p></div>
+                <div class="review"><div class="avatar">МП</div><h3>Марина</h3><p>Швидка доставка, приємний сервіс. Рекомендую!</p></div>
+                <div class="review"><div class="avatar">ОR</div><h3>Оксана</h3><p>Аромати стійкі та якісні. Вже третій раз замовляю.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="section">
+        <div class="container">
+            <h2>НОВИНИ</h2>
+            <div class="news-wrapper">
+                <div class="news-grid">
+                    <div class="news-card">
+                        <span>13 лютого 2026</span>
+                        <h3>Як обрати зелений аромат?</h3>
+                        <p>Свіжі ноти листя фіалки, матча та папороті - головні тренди цього сезону.</p>
+                    </div>
+                    <div class="news-card">
+                        <span>22 квітня 2026</span>
+                        <h3>Квіткове пробудження</h3>
+                        <p>Тубероза, фіалка та мускус - ідеальний букет для весняного настрою.</p>
+                    </div>
+                </div>
+                <aside class="tips">
+                    <h3>💡 ПОРАДИ ВІД AURA</h3>
+                    <ul>
+                        <li>Зберігайте парфуми в прохолодному темному місці</li>
+                        <li>Наносьте аромат на зволожену шкіру</li>
+                        <li>Не розтирайте парфуми після нанесення</li>
+                        <li>Аромат довше тримається на пульсі та за вухами</li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__cols">
+            <div>
+                <h4>КОНТАКТИ</h4>
+                <p> +33 757 05 286</p>
+                <p> info@aura.parfumes</p>
+            </div>
+            <div>
+                <h4>ПРО НАС</h4>
+                <nav>
+                    <ul>
+                        <li><a href="#">Про аромати</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h4>СОЦМЕРЕЖІ</h4>
+                <nav>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2026 AURA Parfumes. Всі права захищено.</p>
+        </div>
+    </div>
+</footer>
+
+<div class="modal" id="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+        <button class="modal__close" id="closeModalBtn">×</button>
+        <h2>Замовити аромат</h2>
+        <form id="orderForm">
+            <input type="text" id="userName" placeholder="Ваше ім'я" required>
+            <input type="email" id="emailInput" placeholder="Email" required>
+            <span class="error" id="emailError"></span>
+            <input type="tel" id="userPhone" placeholder="Телефон">
+            <select id="productSelect">
+                <option value="Woody Oud">Woody Oud - 2 450 ₴</option>
+                <option value="Floral Bloom">Floral Bloom - 2 890 ₴</option>
+                <option value="Amber Night">Amber Night - 3 200 ₴</option>
+                <option value="Rose Noir">Rose Noir - 2 990 ₴</option>
+            </select>
+            <button type="submit" class="btn">Відправити</button>
+        </form>
+    </div>
+</div>
+
+<div class="cookie" id="cookieBar">
+    <p>🍪 Ми використовуємо cookie для покращення роботи сайту</p>
+    <button id="acceptCookie">Прийняти</button>
+</div>
+
+<button class="go-top" id="goTopBtn">↑</button>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
